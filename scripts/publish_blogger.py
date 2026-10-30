@@ -1,6 +1,13 @@
 """posting_MMDD 저장소의 오늘 맛집 글(영어판)을 Blogger에 게시합니다."""
-import json, os, sys, urllib.parse, urllib.request
+import json, os, sys, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone, timedelta
+
+def fail(msg):
+    print(f"::error::{msg}"); sys.exit(1)
+
+for k in ("BLOGGER_CLIENT_ID", "BLOGGER_CLIENT_SECRET", "BLOGGER_REFRESH_TOKEN"):
+    if not os.environ.get(k):
+        fail(f"Secret {k} 이 비어 있어요. posting 저장소 Settings > Secrets and variables > Actions 에 등록해 주세요.")
 
 BLOG_ID = os.environ["BLOGGER_BLOG_ID"]
 OWNER = os.environ.get("OWNER", "c7cheu96-crypto")
@@ -9,8 +16,12 @@ draft = os.environ.get("DRAFT", "false") == "true"
 
 def http(url, data=None, headers=None, method=None):
     req = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
-    with urllib.request.urlopen(req) as r:
-        return json.loads(r.read().decode())
+    try:
+        with urllib.request.urlopen(req) as r:
+            return json.loads(r.read().decode())
+    except urllib.error.HTTPError as e:
+        body = e.read().decode(errors="replace")[:400]
+        raise RuntimeError(f"HTTP {e.code} {url.split('?')[0]} :: {body}") from None
 
 def raw(path):
     return http(f"https://raw.githubusercontent.com/{OWNER}/{repo}/main/{urllib.parse.quote(path)}")
@@ -20,11 +31,14 @@ try:
 except Exception as e:
     print(f"{repo}: posts/latest.json 없음 ({e}). 게시할 글이 없어요."); sys.exit(0)
 
-token = http("https://oauth2.googleapis.com/token", urllib.parse.urlencode({
+try:
+  token = http("https://oauth2.googleapis.com/token", urllib.parse.urlencode({
     "client_id": os.environ["BLOGGER_CLIENT_ID"],
     "client_secret": os.environ["BLOGGER_CLIENT_SECRET"],
     "refresh_token": os.environ["BLOGGER_REFRESH_TOKEN"],
     "grant_type": "refresh_token"}).encode())["access_token"]
+except Exception as e:
+    fail(f"구글 토큰 발급 실패: {e}".replace("\n", " "))
 auth = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
 api = f"https://www.googleapis.com/blogger/v3/blogs/{BLOG_ID}/posts"
 
@@ -46,7 +60,10 @@ for item in latest.get("posts", []):
         print(f"건너뜀: 이미 게시됨 — {en['title']}"); continue
     body = json.dumps({"kind": "blogger#post", "title": en["title"],
                        "content": en["html"], "labels": en.get("labels", [])}).encode()
-    res = http(f"{api}/?isDraft={'true' if draft else 'false'}", data=body, headers=auth, method="POST")
-    print(f"게시 완료: {en['title']} → {res.get('url', '(초안)')}")
+    try:
+        res = http(f"{api}/?isDraft={'true' if draft else 'false'}", data=body, headers=auth, method="POST")
+    except Exception as e:
+        fail(f"Blogger 게시 실패: {e}".replace("\n", " "))
+    print(f"::notice::게시 완료({'초안' if draft else '공개'}): {en['title']} → {res.get('url') or res.get('id')}")
     published += 1
 print(f"{repo}: {published}개 게시")
