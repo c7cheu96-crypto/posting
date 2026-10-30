@@ -1,0 +1,26 @@
+name: 매일 오전 9시 날짜 저장소 만들기
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 매일 00:00 UTC = 오전 9시 (한국 시간)
+  workflow_dispatch:       # Actions 탭에서 수동 실행도 가능
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - name: posting_MMDD 저장소 만들기
+        env:
+          GH_TOKEN: ${{ secrets.REPO_CREATE_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          NAME="posting_$(TZ=Asia/Seoul date +%m%d)"
+          if gh api "repos/$OWNER/$NAME" >/dev/null 2>&1; then
+            echo "$NAME 저장소가 이미 있어요"; exit 0
+          fi
+          gh api user/repos -X POST \
+            -f name="$NAME" \
+            -F private=false \
+            -F auto_init=true \
+            -f description="$(TZ=Asia/Seoul date +%F) 맛집 사진 업로드용"
+          echo "$NAME 저장소를 만들었어요"
