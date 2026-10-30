@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       repo:
-        description: '게시할 저장소 (비우면 오늘 posting_MMDD)'
+        description: '게시할 저장소 (비우면 posting)'
         required: false
       draft:
         description: '초안으로만 저장 (true/false)'

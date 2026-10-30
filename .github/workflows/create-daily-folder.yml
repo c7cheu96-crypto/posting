@@ -1,0 +1,36 @@
+name: 매일 오전 9시 오늘의 사진 폴더 만들기
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # 매일 00:00 UTC = 오전 9시 (한국 시간)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: inbox/MMDD 폴더 만들기
+        run: |
+          MMDD=$(TZ=Asia/Seoul date +%m%d)
+          DIR="inbox/$MMDD"
+          if [ -f "$DIR/README.md" ]; then echo "$DIR 이미 있어요"; exit 0; fi
+          mkdir -p "$DIR"
+          cat > "$DIR/README.md" <<MD
+          # $(TZ=Asia/Seoul date +%F) 맛집 사진 폴더
+
+          이 폴더에서 **Add file → Upload files** 로 사진을 올려 주세요.
+          Commit 메시지 첫 줄에는 지역과 상호명, 설명에는 메모를 적어 주세요.
+
+          - 오후 2시: 사진이 있으면 맛집 글(한글+영어), 없으면 경제 용어 글을 작성해요.
+          - 오후 3시: 맛집 영어판을 블로거에 게시해요.
+          MD
+          sed -i 's/^          //' "$DIR/README.md"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DIR/README.md"
+          git commit -m "Create $DIR for today's photos"
+          git push

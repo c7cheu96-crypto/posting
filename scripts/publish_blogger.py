@@ -1,4 +1,4 @@
-"""posting_MMDD 저장소의 오늘 맛집 글(영어판)을 Blogger에 게시합니다."""
+"""posting 저장소의 오늘 맛집 글(영어판)을 Blogger에 게시합니다."""
 import json, os, sys, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone, timedelta
 
@@ -13,8 +13,8 @@ BLOG_ID = os.environ["BLOGGER_BLOG_ID"]
 OWNER = os.environ.get("OWNER", "c7cheu96-crypto")
 today = datetime.now(timezone(timedelta(hours=9)))
 explicit = os.environ.get("TARGET_REPO")
-# 지정 저장소가 없으면: 오늘 저장소 → 실패 시 posting 저장소(대체 저장 위치) 순서로 확인
-candidates = [explicit] if explicit else ["posting_" + today.strftime("%m%d"), "posting"]
+# 지정 저장소가 없으면 posting 저장소의 오늘 글을 게시
+candidates = [explicit] if explicit else ["posting"]
 TODAY = today.strftime("%Y-%m-%d")
 draft = os.environ.get("DRAFT", "false") == "true"
 
