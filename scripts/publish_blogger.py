@@ -1,0 +1,52 @@
+"""posting_MMDD 저장소의 오늘 맛집 글(영어판)을 Blogger에 게시합니다."""
+import json, os, sys, urllib.parse, urllib.request
+from datetime import datetime, timezone, timedelta
+
+BLOG_ID = os.environ["BLOGGER_BLOG_ID"]
+OWNER = os.environ.get("OWNER", "c7cheu96-crypto")
+repo = os.environ.get("TARGET_REPO") or "posting_" + datetime.now(timezone(timedelta(hours=9))).strftime("%m%d")
+draft = os.environ.get("DRAFT", "false") == "true"
+
+def http(url, data=None, headers=None, method=None):
+    req = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
+    with urllib.request.urlopen(req) as r:
+        return json.loads(r.read().decode())
+
+def raw(path):
+    return http(f"https://raw.githubusercontent.com/{OWNER}/{repo}/main/{urllib.parse.quote(path)}")
+
+try:
+    latest = raw("posts/latest.json")
+except Exception as e:
+    print(f"{repo}: posts/latest.json 없음 ({e}). 게시할 글이 없어요."); sys.exit(0)
+
+token = http("https://oauth2.googleapis.com/token", urllib.parse.urlencode({
+    "client_id": os.environ["BLOGGER_CLIENT_ID"],
+    "client_secret": os.environ["BLOGGER_CLIENT_SECRET"],
+    "refresh_token": os.environ["BLOGGER_REFRESH_TOKEN"],
+    "grant_type": "refresh_token"}).encode())["access_token"]
+auth = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+api = f"https://www.googleapis.com/blogger/v3/blogs/{BLOG_ID}/posts"
+
+existing = set()
+for status in ("live", "draft"):
+    try:
+        res = http(f"{api}?maxResults=50&status={status}&fields=items(title)", headers=auth)
+        existing |= {p["title"] for p in res.get("items", [])}
+    except Exception:
+        pass
+
+published = 0
+for item in latest.get("posts", []):
+    post = raw(item["url"])
+    en = post.get("en")
+    if not en:
+        print(f"건너뜀: {item['name']} (영어판 없음 — 경제 글이거나 예전 형식)"); continue
+    if en["title"] in existing:
+        print(f"건너뜀: 이미 게시됨 — {en['title']}"); continue
+    body = json.dumps({"kind": "blogger#post", "title": en["title"],
+                       "content": en["html"], "labels": en.get("labels", [])}).encode()
+    res = http(f"{api}/?isDraft={'true' if draft else 'false'}", data=body, headers=auth, method="POST")
+    print(f"게시 완료: {en['title']} → {res.get('url', '(초안)')}")
+    published += 1
+print(f"{repo}: {published}개 게시")

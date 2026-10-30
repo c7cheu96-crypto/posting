@@ -1,0 +1,30 @@
+name: 매일 오후 3시 Blogger에 맛집 글(영어) 게시
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # 매일 06:00 UTC = 오후 3시 (한국 시간), 2시 글 작성 이후
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: '게시할 저장소 (비우면 오늘 posting_MMDD)'
+        required: false
+      draft:
+        description: '초안으로만 저장 (true/false)'
+        required: false
+        default: 'false'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Blogger에 게시
+        env:
+          BLOGGER_BLOG_ID: '7634580205889248148'
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          TARGET_REPO: ${{ inputs.repo }}
+          DRAFT: ${{ inputs.draft || 'false' }}
+        run: python3 scripts/publish_blogger.py
