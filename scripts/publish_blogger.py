@@ -11,7 +11,11 @@ for k in ("BLOGGER_CLIENT_ID", "BLOGGER_CLIENT_SECRET", "BLOGGER_REFRESH_TOKEN")
 
 BLOG_ID = os.environ["BLOGGER_BLOG_ID"]
 OWNER = os.environ.get("OWNER", "c7cheu96-crypto")
-repo = os.environ.get("TARGET_REPO") or "posting_" + datetime.now(timezone(timedelta(hours=9))).strftime("%m%d")
+today = datetime.now(timezone(timedelta(hours=9)))
+explicit = os.environ.get("TARGET_REPO")
+# 지정 저장소가 없으면: 오늘 저장소 → 실패 시 posting 저장소(대체 저장 위치) 순서로 확인
+candidates = [explicit] if explicit else ["posting_" + today.strftime("%m%d"), "posting"]
+TODAY = today.strftime("%Y-%m-%d")
 draft = os.environ.get("DRAFT", "false") == "true"
 
 def http(url, data=None, headers=None, method=None):
@@ -23,13 +27,20 @@ def http(url, data=None, headers=None, method=None):
         body = e.read().decode(errors="replace")[:400]
         raise RuntimeError(f"HTTP {e.code} {url.split('?')[0]} :: {body}") from None
 
-def raw(path):
+def raw(repo, path):
     return http(f"https://raw.githubusercontent.com/{OWNER}/{repo}/main/{urllib.parse.quote(path)}")
 
-try:
-    latest = raw("posts/latest.json")
-except Exception as e:
-    print(f"{repo}: posts/latest.json 없음 ({e}). 게시할 글이 없어요."); sys.exit(0)
+items = []
+for repo in candidates:
+    try:
+        latest = raw(repo, "posts/latest.json")
+    except Exception as e:
+        print(f"{repo}: posts/latest.json 없음"); continue
+    if not explicit and latest.get("date") != TODAY:
+        print(f"{repo}: 오늘({TODAY}) 글이 아님 — 건너뜀"); continue
+    items += [(repo, it) for it in latest.get("posts", [])]
+if not items:
+    print("게시할 글이 없어요."); sys.exit(0)
 
 try:
   token = http("https://oauth2.googleapis.com/token", urllib.parse.urlencode({
@@ -51,8 +62,8 @@ for status in ("live", "draft"):
         pass
 
 published = 0
-for item in latest.get("posts", []):
-    post = raw(item["url"])
+for repo, item in items:
+    post = raw(repo, item["url"])
     en = post.get("en")
     if not en:
         print(f"건너뜀: {item['name']} (영어판 없음 — 경제 글이거나 예전 형식)"); continue
@@ -66,4 +77,4 @@ for item in latest.get("posts", []):
         fail(f"Blogger 게시 실패: {e}".replace("\n", " "))
     print(f"::notice::게시 완료({'초안' if draft else '공개'}): {en['title']} → {res.get('url') or res.get('id')}")
     published += 1
-print(f"{repo}: {published}개 게시")
+print(f"{published}개 게시")
