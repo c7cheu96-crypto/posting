@@ -1,60 +1,49 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-26",
   "name": "동탄쭈돼집",
   "type": "food",
-  "title": "🔥 동탄 쭈돼집 | 쌈 싸 먹는 쭈꾸미볶음에 숯불향 가득한 꼼장어까지!",
-  "summary": "동탄 쭈돼집에서 쌈 싸 먹는 쭈꾸미 볶음과 숯불향 제대로 나는 꼼장어를 맛보고 온 후기예요.",
+  "platform": "naver",
+  "title": "동탄 쭈꾸미 맛집 쭈돼집 🔥 철판에 볶고 석쇠에 굽고, 한 번에 두 가지 맛!",
+  "summary": "동탄 쭈돼집에서 콩나물 듬뿍 철판 쭈꾸미와 석쇠 불향 구이를 함께 즐기고 왔어요. 깻잎, 김가루, 무쌈까지 곁들이가 알차서 쌈 싸 먹는 재미가 쏠쏠한 곳이에요.",
   "tags": [
-    "#동탄맛집",
-    "#동탄쭈돼집",
-    "#쭈꾸미맛집",
-    "#꼼장어",
-    "#숯불꼼장어",
-    "#쭈꾸미볶음",
-    "#동탄술집",
-    "#맛집추천"
+    "동탄맛집",
+    "동탄쭈꾸미",
+    "쭈돼집",
+    "쭈꾸미볶음",
+    "동탄저녁",
+    "석쇠구이",
+    "내돈내산",
+    "동탄데이트"
   ],
   "images": [
     {
-      "file": "inbox/1026/20261024_182507.jpg",
-      "caption": "기본 상차림 – 김, 무쌈, 마늘, 소스",
-      "alt": "김과 무쌈, 생마늘, 소스가 담긴 기본 상차림",
-      "url": "https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182507.jpg"
-    },
-    {
-      "file": "inbox/1026/20261024_182509.jpg",
-      "caption": "쌈 재료 – 김가루와 깻잎",
-      "alt": "김가루 한 접시와 깻잎 한 묶음",
-      "url": "https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182509.jpg"
-    },
-    {
       "file": "inbox/1026/20261024_182746.jpg",
-      "caption": "쭈꾸미 볶음 – 콩나물 듬뿍",
-      "alt": "콩나물과 쭈꾸미, 돼지고기가 함께 볶아진 철판",
+      "caption": "콩나물 듬뿍 올라간 철판 쭈꾸미",
+      "alt": "철판 위 쭈꾸미 콩나물 볶음",
       "url": "https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182746.jpg"
     },
     {
       "file": "inbox/1026/20261024_193812.jpg",
-      "caption": "숯불 위의 꼼장어",
-      "alt": "숯불 석쇠 위에서 집게로 굽고 있는 양념 꼼장어",
+      "caption": "석쇠에 올려 한 번 더 구워 먹는 재미",
+      "alt": "석쇠 위에서 집게로 굽는 양념 구이",
       "url": "https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_193812.jpg"
+    },
+    {
+      "file": "inbox/1026/20261024_182509.jpg",
+      "caption": "넉넉하게 나오는 김가루와 깻잎",
+      "alt": "그릇에 담긴 김가루와 깻잎",
+      "url": "https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182509.jpg"
+    },
+    {
+      "file": "inbox/1026/20261024_182507.jpg",
+      "caption": "김, 무쌈, 생마늘이 담긴 곁들이 접시",
+      "alt": "김, 무쌈, 생마늘과 소스가 담긴 곁들이 접시",
+      "url": "https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182507.jpg"
     }
   ],
   "body": {
-    "html": "<p>안녕하세요, 여러분! 😊 오늘은 동탄에서 다녀온 <b>쭈돼집</b> 이야기를 들고 왔어요.</p>\n<p>이름부터 왠지 매콤하고 든든한 냄새가 솔솔 나지 않나요? 쭈꾸미에 꼼장어까지, 쌈 싸서 한입 가득 먹고 온 후기를 지금부터 풀어볼게요 🙌</p>\n<h2>🍽️ 정갈한 기본 상차림</h2>\n<p>자리에 앉으니 기본 찬이 깔끔하게 차려지더라고요. 칸칸이 나뉜 접시에 김, 얇게 썬 무쌈, 생마늘이 담겨 나오고, 옆에는 소스 종지들이 놓여 있었어요.</p>\n<p>무쌈은 새콤하고 아삭해서 매콤한 메뉴랑 같이 먹기에 딱이랍니다.</p>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182507.jpg\" alt=\"김과 무쌈, 생마늘, 소스가 담긴 기본 상차림\" data-index=\"1\"><figcaption>기본 상차림 – 김, 무쌈, 마늘, 소스</figcaption></figure>\n<h2>🥬 쌈 재료가 넉넉해요</h2>\n<p>김가루도 한 접시 가득, 향긋한 깻잎도 한 묶음 나오더라고요. 사장님(?)의 큰 손이 느껴지는 순간이었어요 ㅎㅎ</p>\n<p>그리고 오늘의 핵심 팁! <b>여기는 꼭 쌈 싸서 드셔 보세요.</b> 깻잎에 쭈꾸미 한 점, 무쌈이나 마늘 하나 올려서 먹으면 맛이 훨씬 살아나더라고요 😋</p>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182509.jpg\" alt=\"김가루 한 접시와 깻잎 한 묶음\" data-index=\"2\"><figcaption>쌈 재료 – 김가루와 깻잎</figcaption></figure>\n<h2>🐙 쭈꾸미 볶음</h2>\n<p>철판 가득 콩나물이 수북하게 올라간 쭈꾸미 볶음이에요. 가게 이름처럼 쭈꾸미와 돼지고기가 함께 들어가 있어서 쫄깃함과 고소함을 동시에 즐길 수 있었어요.</p>\n<p>빨간 양념이 콩나물에 촉촉하게 배어들어서, 김가루랑 같이 깻잎에 싸 먹으니 정말 맛있더라고요!</p>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182746.jpg\" alt=\"콩나물과 쭈꾸미, 돼지고기가 함께 볶아진 철판\" data-index=\"3\"><figcaption>쭈꾸미 볶음 – 콩나물 듬뿍</figcaption></figure>\n<h2>🔥 숯불 꼼장어</h2>\n<p>이 집에서 제가 제일 감탄한 메뉴는 바로 꼼장어예요. 석쇠 위에서 지글지글 구워지는데, <b>숯불향이 제대로 나더라고요.</b></p>\n<p>양념이 살짝 그을리면서 불맛이 확 올라오는데, 쫄깃한 식감까지 더해져서 술안주로도 그만이랍니다 🍻</p>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_193812.jpg\" alt=\"숯불 석쇠 위에서 집게로 굽고 있는 양념 꼼장어\" data-index=\"4\"><figcaption>숯불 위의 꼼장어</figcaption></figure>\n<h2>💬 총평</h2>\n<p>쭈꾸미 볶음은 쌈 싸 먹는 재미가, 꼼장어는 진한 숯불향이 매력인 곳이었어요. 쌈 재료도 넉넉하게 나와서 끝까지 맛있게 먹고 나왔답니다.</p>\n<p>동탄에서 매콤한 쭈꾸미나 숯불 꼼장어가 생각나실 때 한번 들러 보세요! 오늘도 맛있는 하루 보내세요 💕</p>\n<p>#동탄맛집 #동탄쭈돼집 #쭈꾸미맛집 #꼼장어 #숯불꼼장어 #쭈꾸미볶음 #동탄술집 #맛집추천</p>",
-    "markdown": "안녕하세요, 여러분! 😊 오늘은 동탄에서 다녀온 **쭈돼집** 이야기를 들고 왔어요.\n\n이름부터 왠지 매콤하고 든든한 냄새가 솔솔 나지 않나요? 쭈꾸미에 꼼장어까지, 쌈 싸서 한입 가득 먹고 온 후기를 지금부터 풀어볼게요 🙌\n\n## 🍽️ 정갈한 기본 상차림\n\n자리에 앉으니 기본 찬이 깔끔하게 차려지더라고요. 칸칸이 나뉜 접시에 김, 얇게 썬 무쌈, 생마늘이 담겨 나오고, 옆에는 소스 종지들이 놓여 있었어요.\n\n무쌈은 새콤하고 아삭해서 매콤한 메뉴랑 같이 먹기에 딱이랍니다.\n\n![김과 무쌈, 생마늘, 소스가 담긴 기본 상차림](https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182507.jpg)\n*기본 상차림 – 김, 무쌈, 마늘, 소스*\n\n## 🥬 쌈 재료가 넉넉해요\n\n김가루도 한 접시 가득, 향긋한 깻잎도 한 묶음 나오더라고요. 사장님(?)의 큰 손이 느껴지는 순간이었어요 ㅎㅎ\n\n그리고 오늘의 핵심 팁! **여기는 꼭 쌈 싸서 드셔 보세요.** 깻잎에 쭈꾸미 한 점, 무쌈이나 마늘 하나 올려서 먹으면 맛이 훨씬 살아나더라고요 😋\n\n![김가루 한 접시와 깻잎 한 묶음](https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182509.jpg)\n*쌈 재료 – 김가루와 깻잎*\n\n## 🐙 쭈꾸미 볶음\n\n철판 가득 콩나물이 수북하게 올라간 쭈꾸미 볶음이에요. 가게 이름처럼 쭈꾸미와 돼지고기가 함께 들어가 있어서 쫄깃함과 고소함을 동시에 즐길 수 있었어요.\n\n빨간 양념이 콩나물에 촉촉하게 배어들어서, 김가루랑 같이 깻잎에 싸 먹으니 정말 맛있더라고요!\n\n![콩나물과 쭈꾸미, 돼지고기가 함께 볶아진 철판](https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182746.jpg)\n*쭈꾸미 볶음 – 콩나물 듬뿍*\n\n## 🔥 숯불 꼼장어\n\n이 집에서 제가 제일 감탄한 메뉴는 바로 꼼장어예요. 석쇠 위에서 지글지글 구워지는데, **숯불향이 제대로 나더라고요.**\n\n양념이 살짝 그을리면서 불맛이 확 올라오는데, 쫄깃한 식감까지 더해져서 술안주로도 그만이랍니다 🍻\n\n![숯불 석쇠 위에서 집게로 굽고 있는 양념 꼼장어](https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_193812.jpg)\n*숯불 위의 꼼장어*\n\n## 💬 총평\n\n쭈꾸미 볶음은 쌈 싸 먹는 재미가, 꼼장어는 진한 숯불향이 매력인 곳이었어요. 쌈 재료도 넉넉하게 나와서 끝까지 맛있게 먹고 나왔답니다.\n\n동탄에서 매콤한 쭈꾸미나 숯불 꼼장어가 생각나실 때 한번 들러 보세요! 오늘도 맛있는 하루 보내세요 💕\n\n#동탄맛집 #동탄쭈돼집 #쭈꾸미맛집 #꼼장어 #숯불꼼장어 #쭈꾸미볶음 #동탄술집 #맛집추천",
-    "plain": "안녕하세요, 여러분! 😊 오늘은 동탄에서 다녀온 쭈돼집 이야기를 들고 왔어요.\n\n이름부터 왠지 매콤하고 든든한 냄새가 솔솔 나지 않나요? 쭈꾸미에 꼼장어까지, 쌈 싸서 한입 가득 먹고 온 후기를 지금부터 풀어볼게요 🙌\n\n■ 🍽️ 정갈한 기본 상차림\n\n자리에 앉으니 기본 찬이 깔끔하게 차려지더라고요. 칸칸이 나뉜 접시에 김, 얇게 썬 무쌈, 생마늘이 담겨 나오고, 옆에는 소스 종지들이 놓여 있었어요.\n\n무쌈은 새콤하고 아삭해서 매콤한 메뉴랑 같이 먹기에 딱이랍니다.\n\n[사진1] 기본 상차림 – 김, 무쌈, 마늘, 소스\n\n■ 🥬 쌈 재료가 넉넉해요\n\n김가루도 한 접시 가득, 향긋한 깻잎도 한 묶음 나오더라고요. 사장님(?)의 큰 손이 느껴지는 순간이었어요 ㅎㅎ\n\n그리고 오늘의 핵심 팁! 여기는 꼭 쌈 싸서 드셔 보세요. 깻잎에 쭈꾸미 한 점, 무쌈이나 마늘 하나 올려서 먹으면 맛이 훨씬 살아나더라고요 😋\n\n[사진2] 쌈 재료 – 김가루와 깻잎\n\n■ 🐙 쭈꾸미 볶음\n\n철판 가득 콩나물이 수북하게 올라간 쭈꾸미 볶음이에요. 가게 이름처럼 쭈꾸미와 돼지고기가 함께 들어가 있어서 쫄깃함과 고소함을 동시에 즐길 수 있었어요.\n\n빨간 양념이 콩나물에 촉촉하게 배어들어서, 김가루랑 같이 깻잎에 싸 먹으니 정말 맛있더라고요!\n\n[사진3] 쭈꾸미 볶음 – 콩나물 듬뿍\n\n■ 🔥 숯불 꼼장어\n\n이 집에서 제가 제일 감탄한 메뉴는 바로 꼼장어예요. 석쇠 위에서 지글지글 구워지는데, 숯불향이 제대로 나더라고요.\n\n양념이 살짝 그을리면서 불맛이 확 올라오는데, 쫄깃한 식감까지 더해져서 술안주로도 그만이랍니다 🍻\n\n[사진4] 숯불 위의 꼼장어\n\n■ 💬 총평\n\n쭈꾸미 볶음은 쌈 싸 먹는 재미가, 꼼장어는 진한 숯불향이 매력인 곳이었어요. 쌈 재료도 넉넉하게 나와서 끝까지 맛있게 먹고 나왔답니다.\n\n동탄에서 매콤한 쭈꾸미나 숯불 꼼장어가 생각나실 때 한번 들러 보세요! 오늘도 맛있는 하루 보내세요 💕\n\n#동탄맛집 #동탄쭈돼집 #쭈꾸미맛집 #꼼장어 #숯불꼼장어 #쭈꾸미볶음 #동탄술집 #맛집추천"
-  },
-  "en": {
-    "title": "Spicy Webfoot Octopus & Charcoal-Grilled Hagfish at Jjudwaejip in Dongtan",
-    "html": "<p>If you love spicy food, smoky grills and the fun of building every bite with your own hands, let me take you to a little spot I visited in Dongtan: <b>Jjudwaejip (쭈돼집)</b>.</p>\n<p>Dongtan is a newer city in Hwaseong, Gyeonggi Province, just south of Seoul. The name Jjudwaejip is a playful mash-up: <i>jju</i> from <i>jjukkumi</i> (webfoot octopus), <i>dwae</i> from <i>dwaeji</i> (pork), and <i>jip</i> meaning \"house\". So, the octopus-and-pork house!</p>\n<h2>The Table Setting</h2>\n<p>Like most Korean restaurants, the meal starts with free side dishes. Ours came in a neat divided tray: a sheet of seaweed, thin slices of sweet-and-sour pickled radish (<i>musam</i>, 무쌈) for wrapping, and a few cloves of raw garlic, with little dishes of sauce on the side.</p>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182507.jpg\" alt=\"Side dishes of seaweed, sliced radish and garlic\"><figcaption>The basic table setting: seaweed, pickled radish wraps, raw garlic and dipping sauces</figcaption></figure>\n<h2>Wrap It Up: Ssam Time</h2>\n<p>Then came a generous bowl of seasoned seaweed flakes and a bundle of perilla leaves (<i>kkaennip</i>, 깻잎), a fragrant, slightly minty leaf Koreans love. This is all for <i>ssam</i> (쌈), the Korean habit of wrapping food in a leaf with a little garlic or pickle and eating it in one bite.</p>\n<p>My number one tip here: <b>wrap everything.</b> The food really does taste better as ssam.</p>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182509.jpg\" alt=\"Seaweed flakes and perilla leaves\"><figcaption>Wrap supplies: a big bowl of seasoned seaweed flakes and fresh perilla leaves</figcaption></figure>\n<h2>Stir-Fried Jjukkumi (쭈꾸미 볶음)</h2>\n<p><i>Jjukkumi</i> is a small octopus, smaller and more tender than regular octopus, and a favorite in spicy Korean stir-fries. Ours arrived on a hot plate with a big pile of bean sprouts, and true to the restaurant's name, there was pork in there too.</p>\n<p>The red chili sauce soaks into the sprouts, and you get chewy octopus and rich pork in the same mouthful. Put some in a perilla leaf with a pinch of seaweed flakes and you have the perfect bite.</p>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182746.jpg\" alt=\"Spicy stir-fried baby octopus with bean sprouts on a hot plate\"><figcaption>Stir-fried jjukkumi with a mountain of bean sprouts</figcaption></figure>\n<h2>Charcoal-Grilled Hagfish (꼼장어)</h2>\n<p>This was the star for me. <i>Kkomjangeo</i> is hagfish, often sold as \"slime eel\" in English. Don't let that put you off! In Korea it's a classic drinking snack, usually marinated in a spicy sauce and grilled at the table.</p>\n<p>Here it cooks over real charcoal, and you can taste it. <b>The smoky charcoal flavor really comes through.</b> The edges of the sauce caramelize a little, the texture is pleasantly chewy, and it goes very well with a cold beer or soju.</p>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_193812.jpg\" alt=\"Marinated hagfish being grilled with tongs over charcoal\"><figcaption>Spicy marinated hagfish (kkomjangeo) grilling over charcoal</figcaption></figure>\n<h2>Good to Know</h2>\n<ul><li>Eat it as <i>ssam</i>: wrap the dishes in perilla leaves with radish or garlic.</li><li>Seaweed flakes and perilla leaves come with the meal, so there's plenty to wrap with.</li><li>The hagfish is grilled over charcoal, so expect a little smoke and a lot of flavor.</li></ul>\n<h2>Verdict</h2>\n<p>Jjudwaejip is a cozy, no-fuss place for spicy octopus and smoky charcoal-grilled hagfish, with plenty of wraps to go around. If you find yourself in Dongtan and want a real Korean dinner, it's well worth a visit. Grab some perilla leaves and dig in!</p>",
-    "labels": [
-      "Korean Food",
-      "Dongtan",
-      "Gyeonggi",
-      "Seafood",
-      "Korean BBQ",
-      "Restaurant Review"
-    ]
+    "html": "<p>안녕하세요, 이웃님들! 😊</p>\n<p>주말 저녁에 갑자기 매콤한 게 너무 당기더라고요. 그래서 동탄에서 쭈꾸미 집을 찾다가 이름부터 귀여운 &#x27;쭈돼집&#x27;에 다녀왔답니다. 쭈꾸미를 철판에 볶아 먹고, 석쇠에 한 번 더 구워 먹을 수 있어서 한 끼에 두 가지 맛을 즐길 수 있는 곳이었어요. 🐙</p>\n<h2>🔥 지글지글 철판 위 콩나물 쭈꾸미</h2>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182746.jpg\" alt=\"철판 위 쭈꾸미 콩나물 볶음\" data-index=\"1\"><figcaption>콩나물 듬뿍 올라간 철판 쭈꾸미</figcaption></figure>\n<p>자리에 앉으면 메인인 쭈꾸미 철판볶음이 나와요. 빨간 양념을 입은 쭈꾸미 위에 콩나물이 수북하게 올라가 있는데, 보기만 해도 침이 꼴깍 넘어가더라고요.</p>\n<p>익어갈수록 쭈꾸미는 탱글탱글해지고, 아삭한 콩나물이 매운맛을 적당히 잡아줘요. 큼직하게 들어간 대파도 볶일수록 달큰해져서 하나도 남기지 않고 다 먹었답니다. 😋</p>\n<h2>🍢 석쇠에 올려 불향 한 번 더!</h2>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_193812.jpg\" alt=\"석쇠 위에서 집게로 굽는 양념 구이\" data-index=\"2\"><figcaption>석쇠에 올려 한 번 더 구워 먹는 재미</figcaption></figure>\n<p>이 집의 진짜 매력은 바로 석쇠예요. 양념된 재료를 석쇠에 올려 직접 구워 먹을 수 있는데, 겉이 살짝 그을리면서 불향이 확 살아나더라고요.</p>\n<p>철판볶음과는 또 다른 맛이라 번갈아 가며 먹는 재미가 쏠쏠했어요. 집게로 하나씩 뒤집어 가며 굽다 보면 대화도 저절로 많아진답니다. 🙌</p>\n<h2>🥬 쌈 싸 먹는 재미, 알찬 곁들이</h2>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182509.jpg\" alt=\"그릇에 담긴 김가루와 깻잎\" data-index=\"3\"><figcaption>넉넉하게 나오는 김가루와 깻잎</figcaption></figure>\n<p>깻잎과 김가루가 넉넉하게 나와요. 깻잎 한 장에 쭈꾸미 한 점, 김가루를 솔솔 올려 싸 먹으면 향긋함이 입안 가득 퍼져요.</p>\n<figure><img src=\"https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182507.jpg\" alt=\"김, 무쌈, 생마늘과 소스가 담긴 곁들이 접시\" data-index=\"4\"><figcaption>김, 무쌈, 생마늘이 담긴 곁들이 접시</figcaption></figure>\n<p>곁들이 접시에는 김, 무쌈, 생마늘이 담겨 나오고 소스도 따로 준비돼 있어요. 매운 양념 사이사이에 새콤한 무쌈을 곁들이니 입이 개운해져서 끝까지 질리지 않고 먹을 수 있었어요.</p>\n<h2>💛 총평</h2>\n<p>매콤한 쭈꾸미를 철판과 석쇠, 두 가지 방식으로 즐길 수 있는 곳이에요. 쌈 재료도 넉넉해서 여럿이 가서 이것저것 싸 먹기 딱 좋더라고요. 동탄에서 맵고 든든한 저녁 메뉴를 찾고 계신다면 한 번 가 보셔도 좋을 것 같아요!</p>\n<p>오늘도 맛있는 하루 보내세요, 이웃님들! 💕</p>\n<p>#동탄맛집 #동탄쭈꾸미 #쭈돼집 #쭈꾸미볶음 #동탄저녁 #석쇠구이 #내돈내산 #동탄데이트</p>",
+    "markdown": "안녕하세요, 이웃님들! 😊\n\n주말 저녁에 갑자기 매콤한 게 너무 당기더라고요. 그래서 동탄에서 쭈꾸미 집을 찾다가 이름부터 귀여운 '쭈돼집'에 다녀왔답니다. 쭈꾸미를 철판에 볶아 먹고, 석쇠에 한 번 더 구워 먹을 수 있어서 한 끼에 두 가지 맛을 즐길 수 있는 곳이었어요. 🐙\n\n## 🔥 지글지글 철판 위 콩나물 쭈꾸미\n\n![철판 위 쭈꾸미 콩나물 볶음](https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182746.jpg)\n*콩나물 듬뿍 올라간 철판 쭈꾸미*\n\n자리에 앉으면 메인인 쭈꾸미 철판볶음이 나와요. 빨간 양념을 입은 쭈꾸미 위에 콩나물이 수북하게 올라가 있는데, 보기만 해도 침이 꼴깍 넘어가더라고요.\n\n익어갈수록 쭈꾸미는 탱글탱글해지고, 아삭한 콩나물이 매운맛을 적당히 잡아줘요. 큼직하게 들어간 대파도 볶일수록 달큰해져서 하나도 남기지 않고 다 먹었답니다. 😋\n\n## 🍢 석쇠에 올려 불향 한 번 더!\n\n![석쇠 위에서 집게로 굽는 양념 구이](https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_193812.jpg)\n*석쇠에 올려 한 번 더 구워 먹는 재미*\n\n이 집의 진짜 매력은 바로 석쇠예요. 양념된 재료를 석쇠에 올려 직접 구워 먹을 수 있는데, 겉이 살짝 그을리면서 불향이 확 살아나더라고요.\n\n철판볶음과는 또 다른 맛이라 번갈아 가며 먹는 재미가 쏠쏠했어요. 집게로 하나씩 뒤집어 가며 굽다 보면 대화도 저절로 많아진답니다. 🙌\n\n## 🥬 쌈 싸 먹는 재미, 알찬 곁들이\n\n![그릇에 담긴 김가루와 깻잎](https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182509.jpg)\n*넉넉하게 나오는 김가루와 깻잎*\n\n깻잎과 김가루가 넉넉하게 나와요. 깻잎 한 장에 쭈꾸미 한 점, 김가루를 솔솔 올려 싸 먹으면 향긋함이 입안 가득 퍼져요.\n\n![김, 무쌈, 생마늘과 소스가 담긴 곁들이 접시](https://raw.githubusercontent.com/c7cheu96-crypto/posting/main/inbox/1026/20261024_182507.jpg)\n*김, 무쌈, 생마늘이 담긴 곁들이 접시*\n\n곁들이 접시에는 김, 무쌈, 생마늘이 담겨 나오고 소스도 따로 준비돼 있어요. 매운 양념 사이사이에 새콤한 무쌈을 곁들이니 입이 개운해져서 끝까지 질리지 않고 먹을 수 있었어요.\n\n## 💛 총평\n\n매콤한 쭈꾸미를 철판과 석쇠, 두 가지 방식으로 즐길 수 있는 곳이에요. 쌈 재료도 넉넉해서 여럿이 가서 이것저것 싸 먹기 딱 좋더라고요. 동탄에서 맵고 든든한 저녁 메뉴를 찾고 계신다면 한 번 가 보셔도 좋을 것 같아요!\n\n오늘도 맛있는 하루 보내세요, 이웃님들! 💕\n\n#동탄맛집 #동탄쭈꾸미 #쭈돼집 #쭈꾸미볶음 #동탄저녁 #석쇠구이 #내돈내산 #동탄데이트",
+    "plain": "안녕하세요, 이웃님들! 😊\n\n주말 저녁에 갑자기 매콤한 게 너무 당기더라고요. 그래서 동탄에서 쭈꾸미 집을 찾다가 이름부터 귀여운 '쭈돼집'에 다녀왔답니다. 쭈꾸미를 철판에 볶아 먹고, 석쇠에 한 번 더 구워 먹을 수 있어서 한 끼에 두 가지 맛을 즐길 수 있는 곳이었어요. 🐙\n\n■ 🔥 지글지글 철판 위 콩나물 쭈꾸미\n\n[사진1] 콩나물 듬뿍 올라간 철판 쭈꾸미\n\n자리에 앉으면 메인인 쭈꾸미 철판볶음이 나와요. 빨간 양념을 입은 쭈꾸미 위에 콩나물이 수북하게 올라가 있는데, 보기만 해도 침이 꼴깍 넘어가더라고요.\n\n익어갈수록 쭈꾸미는 탱글탱글해지고, 아삭한 콩나물이 매운맛을 적당히 잡아줘요. 큼직하게 들어간 대파도 볶일수록 달큰해져서 하나도 남기지 않고 다 먹었답니다. 😋\n\n■ 🍢 석쇠에 올려 불향 한 번 더!\n\n[사진2] 석쇠에 올려 한 번 더 구워 먹는 재미\n\n이 집의 진짜 매력은 바로 석쇠예요. 양념된 재료를 석쇠에 올려 직접 구워 먹을 수 있는데, 겉이 살짝 그을리면서 불향이 확 살아나더라고요.\n\n철판볶음과는 또 다른 맛이라 번갈아 가며 먹는 재미가 쏠쏠했어요. 집게로 하나씩 뒤집어 가며 굽다 보면 대화도 저절로 많아진답니다. 🙌\n\n■ 🥬 쌈 싸 먹는 재미, 알찬 곁들이\n\n[사진3] 넉넉하게 나오는 김가루와 깻잎\n\n깻잎과 김가루가 넉넉하게 나와요. 깻잎 한 장에 쭈꾸미 한 점, 김가루를 솔솔 올려 싸 먹으면 향긋함이 입안 가득 퍼져요.\n\n[사진4] 김, 무쌈, 생마늘이 담긴 곁들이 접시\n\n곁들이 접시에는 김, 무쌈, 생마늘이 담겨 나오고 소스도 따로 준비돼 있어요. 매운 양념 사이사이에 새콤한 무쌈을 곁들이니 입이 개운해져서 끝까지 질리지 않고 먹을 수 있었어요.\n\n■ 💛 총평\n\n매콤한 쭈꾸미를 철판과 석쇠, 두 가지 방식으로 즐길 수 있는 곳이에요. 쌈 재료도 넉넉해서 여럿이 가서 이것저것 싸 먹기 딱 좋더라고요. 동탄에서 맵고 든든한 저녁 메뉴를 찾고 계신다면 한 번 가 보셔도 좋을 것 같아요!\n\n오늘도 맛있는 하루 보내세요, 이웃님들! 💕\n\n#동탄맛집 #동탄쭈꾸미 #쭈돼집 #쭈꾸미볶음 #동탄저녁 #석쇠구이 #내돈내산 #동탄데이트"
   }
 }

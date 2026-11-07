@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { --bg:#fff; --fg:#1f2328; --muted:#6b7280; --line:#e5e7eb; --accent:#03c75a; --accent-fg:#fff; --soft:#f6f7f9; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1b1d21; --fg:#e7e9ec; --muted:#9aa1ab; --line:#30343a; --soft:#24272c; } }
+  * { box-sizing: border-box; }
+  body { width: 340px; margin: 0; padding: 14px; font: 13px/1.5 system-ui, "Apple SD Gothic Neo", sans-serif; background: var(--bg); color: var(--fg); }
+  h1 { font-size: 15px; margin: 0 0 10px; }
+  label { display: block; font-size: 12px; color: var(--muted); margin: 8px 0 3px; }
+  input, select { width: 100%; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); font: inherit; }
+  .row { display: flex; gap: 6px; }
+  .row > * { flex: 1; }
+  button { padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); color: var(--fg); font: inherit; cursor: pointer; }
+  button:hover { filter: brightness(0.97); }
+  button.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); font-weight: 600; width: 100%; padding: 9px; margin-top: 10px; }
+  button:disabled { opacity: .5; cursor: default; }
+  #card { margin-top: 12px; padding: 10px; border: 1px solid var(--line); border-radius: 8px; display: none; }
+  #title { font-weight: 600; margin-bottom: 4px; }
+  #meta { color: var(--muted); font-size: 12px; }
+  .copies { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-top: 8px; }
+  #photos { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  #photos button { padding: 0; width: 56px; height: 56px; overflow: hidden; position: relative; }
+  #photos img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #photos span { position: absolute; left: 2px; top: 2px; background: rgba(0,0,0,.6); color: #fff; font-size: 10px; padding: 0 4px; border-radius: 3px; }
+  #status { margin-top: 10px; min-height: 18px; font-size: 12px; color: var(--muted); white-space: pre-wrap; }
+  details { margin-top: 10px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+  <h1>📝 블로그 글 채워넣기</h1>
+
+  <label for="path">불러올 글</label>
+  <div class="row">
+    <input id="path" placeholder="latest 또는 inbox/1026/post.json">
+    <button id="load" style="flex:0 0 auto">불러오기</button>
+  </div>
+  <select id="pick" style="display:none; margin-top:6px"></select>
+
+  <div id="card">
+    <div id="title"></div>
+    <div id="meta"></div>
+    <button class="primary" id="fill">네이버 에디터에 채워넣기</button>
+    <div class="copies">
+      <button id="cTitle">제목 복사</button>
+      <button id="cBody">본문 복사</button>
+      <button id="cTags">태그 복사</button>
+    </div>
+    <div id="photos"></div>
+  </div>
+
+  <div id="status"></div>
+
+  <details>
+    <summary>설정</summary>
+    <label for="repo">GitHub 저장소 (owner/repo)</label>
+    <input id="repo" placeholder="c7cheu96-crypto/posting">
+    <label for="branch">브랜치</label>
+    <input id="branch" placeholder="main">
+  </details>
+
+  <script src="popup.js"></script>
+</body>
+</html>
